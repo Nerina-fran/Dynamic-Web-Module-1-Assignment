@@ -1,0 +1,44 @@
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Find all textareas and paragraphs, and make a red border around them and set the border to red.</title>
+    <style>
+  .box {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+
+  min-height: 200px;
+  width: 50vw;
+  margin: 100px auto;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;}
+ </style>
+
+</head>
+    
+    <body style="background-color:powderblue;">
+        <div class="box" width="200px" >
+        <h3>Find all textareas and paragraphs, and make a red border around them and set the border to red.</h3>
+        
+    <textarea>My name is Brandon Fearon</textarea>
+    <textarea>This is group 1</textarea>
+    <p>jQuery</p>
+    <p>JavaScript</p>
+    <button id="button1">Click to check the effect</button></div>
+    </body>
+    <script>
+   $('#button1').click(function(){ 
+    $( "textarea" ).css( "border", "2px solid red" ).add( "p"  )
+      .css( "border", "2px solid red" );
+    });
+     
+    </script> 
+</html>

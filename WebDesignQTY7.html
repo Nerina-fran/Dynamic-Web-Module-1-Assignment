@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Question.7</title>
+</head>
+
+<body>
+
+    
+       <label for ="musicTypes"> Choose some music types, From the following list:</label> 
+       <select id = "list" onChange="getSelectValue();">
+           <option value="You have selected R&B">R&B</option>
+           <option value="You have selected Jazz">Jazz</option>
+           <option value="You have selected Blues">Blues</option>
+           <option value="You have selected New Age">New Age</option>
+           <option value="You have selected Classical">Classical</option>
+           <option value="You have selected Opera">Opera</option>
+       </select>
+
+       <script>
+        function getSelectValue()
+        {
+            var selectedValue = document.getElementById("list").value;
+            console.log(selectedValue);
+        }
+    </script>
+ </body>
+
+ </html>

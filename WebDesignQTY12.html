@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="demo">Click the button, and this paragraph will be removed from the DOM.</p>
+
+        <button onclick="removeParagraph()">Remove paragraph</button>
+
+               
+        <script>
+            function removeParagraph() {
+                let demo =document.getElementById("demo");
+                demo.remove();
+            };
+        </script>
+    </body>
+</html>
